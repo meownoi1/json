@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surasak</title>
+</head>
+<body>
+<h1>Welcome to Surasak's webpage</h1>
+<p id="test"> </p>
+<script>
+    window.alert("Welcome");
+    document.getElementById("test").innerHTML = 4 + 5;
+    console.log(4+5);
+    document.getElementById("test").innerHTML = 'Hi';
+    console.log('hi');
+    var age = 16;
+    window.alert(age);
+    var lastname = "thumgthong";
+    window.alert(lastname);
+    var cars  = ["Toyota","Honda","BMW"];
+    window.alert(cars);
+    var me = {firstname:"surasak", lastname:"jaichaiyaphum"}
+    window.alert(me);
+    //alert(JSON.stringify(yourObjectVariable));
+    console.log(me);
+    var x=5;
+    var y=6;
+    var z=x+y;
+    document.getElementById("test").innerHTML = z;
+    //const add = (x, y) => x + y
+    //console.log(add(1,2)) // 3
+//คำนวณตัวเลขกำหนดค่าตัวแปรxy
+    function myFunction(a,b)
+    {
+        x=a*b;
+        alert("ผลลัพธ์ของ a*b="+x);
+    }
+//คลิกเพื่อแสดงชื่อ
+    function myname(name1,name2)
+    {
+        alert("welcome"+name1 + ",คุณ"+name2);
+    }
+
+a=1;
+if(a==1){
+alert("a มีค่าเท่ากับ 1");}
+
+a=0;
+if(a==1){
+alert("a มีค่าเท่ากับ 1");}
+else{
+alert("a มีค่าไม่เท่ากับ 1");}
+
+a=2;
+if(a==1){
+alert("a มีค่าเท่ากับ 1");}
+else if (a==2){
+alert("a มีค่าเท่ากับ 2");}
+else{  
+alert("a มีค่าไม่เท่ากับ 1");}
+
+//iteration
+for(i=1;i<=5;++i){
+document.write("การวนรอบที่"+i+"<br>");}
+</script>
+<!--คำนวณตัวเลขกำหนดค่าตัวแปรxy-->
+<button onclick="myFunction(5,3)">Click Me</button>
+<!--คลิ๊กเพื่อแสดงชื่อ-->
+<button onclick="myname('Surasak','DEEE')">welcome</button>
+<button onclick="this.innerHTML=Date()">To Day ?</button>
+</body>
+</html>
